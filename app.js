@@ -14,3 +14,7 @@ navBtn.addEventListener("click", () => {
 navClose.addEventListener("click", () => {
   navbar.classList.remove("showNav");
 });
+// disabling the submit button
+document.getElementById("submit").addEventListener("click", function (event) {
+  event.preventDefault()
+});
