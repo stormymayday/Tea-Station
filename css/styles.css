@@ -208,10 +208,14 @@ Navbar
     z-index: 2;
     background-color: var(--clr-grey-10);
     box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
-    /* hide navbar */
+    /* hiding the navbar */
+    transform: translateX(-100%);
+    transition: var(--transition);
 }
 
-.showNav {}
+.showNav {
+    transform: translate(0);
+}
 
 .navbar-header {
     text-align: right;
