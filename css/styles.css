@@ -183,6 +183,27 @@ p {
 
 /* 
 =================
+Animations
+=================
+*/
+@keyframes bounce {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/* 
+=================
 Navbar
 =================
 */
@@ -195,6 +216,7 @@ Navbar
     color: var(--clr-primary);
     cursor: pointer;
     /* animation */
+    animation: bounce 2s ease infinite;
 }
 
 .navbar {
