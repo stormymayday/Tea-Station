@@ -515,23 +515,6 @@
         </footer>
         <!-- end of footer -->
 
-        <button id="loginButton">Login with GitHub</button>
-        <script type="text/javascript">
-            document
-                .getElementById("loginButton")
-                .addEventListener("click", function () {
-                    const clientId = "Ov23liQFgQnS6MoQQdSJ";
-                    const redirectUri =
-                        "https://stormymayday.github.io/Tea-Station/callback.html";
-                    const state = Math.random().toString(36).substring(7); // Generate a random string for state
-                    const scope = "repo,user";
-                    const authUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(
-                        redirectUri
-                    )}&scope=${scope}&state=${state}`;
-                    window.location.href = authUrl;
-                });
-        </script>
-
         <script src="app.js"></script>
     </body>
 </html>
