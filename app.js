@@ -18,3 +18,13 @@ navClose.addEventListener("click", () => {
 document.getElementById("submit").addEventListener("click", function (event) {
   event.preventDefault()
 });
+
+// Selecting nav links
+const navLinks = document.querySelectorAll(".nav-link");
+
+// Closing nav when a nav link is clicked
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("showNav");
+  });
+});
